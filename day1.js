@@ -2274,3 +2274,13 @@ console.log(sumArr);
 // find the largest sum
 const largest = Math.max(...sumArr);
 console.log(largest);
+
+// PART TWO
+
+// sort the sum array from largest to smallest, then get the first three items
+const largestArr = sumArr.sort((a, b) => b - a).slice(0, 3);
+console.log(largestArr);
+
+// get the sum of the largest three numbers
+const largestSum = largestArr.reduce((acc, curr) => acc + curr);
+console.log(largestSum);
